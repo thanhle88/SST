@@ -61,7 +61,7 @@ while k < N
     for r_i = 1 : r
         Skx           = S_k(:,r_i);
         idx_max       = Idx_max(:,r_i);
-        Rkx(~idx_max) = 0;
+        Skx(~idx_max) = 0;
         S_k(:,r_i)    = Skx;
     end
     if strcmp(method,'normalization')
